@@ -47,5 +47,16 @@ function SumofAll(n){
     }
     return total
 }
-let n = parseInt(console.log("enter a number"));
-let result = SumofAll()
+// let n = parseInt(console.log("enter a number"));
+// let result = SumofAll()
+
+// fibonaccie Series 
+function fibonaccie(n){
+    if(n<=1){
+        return n
+    }
+    else{
+        return fibonaccie(n-1) + fibonaccie(n-2)
+    }
+}
+console.log(fibonaccie(7));
