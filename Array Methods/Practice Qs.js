@@ -11,3 +11,35 @@ console.log(sum);
 let avg = sum / nums.length
 console.log(avg);
 
+//Qs2. Create a new array using the map 
+// function whose each element is equal to the original 
+// element plus 5
+
+let arr = [2,4,7,9,5];
+const mapfunction = arr.map((arr) => arr + 5)
+console.log(mapfunction);
+
+//Qs3. Create a new array whose elements are
+// in uppercase of words present in the original array.
+
+let arr3 = ["pratham" , "dubey" , "pythondevloper"]
+const toupper = arr3.map((arr3) => arr3.toUpperCase());
+console.log(toupper);
+
+//Qs4. Write a function called doubleAndReturnArgs which 
+// accepts an array and a variable number of arguments.
+// The function should return a new array with the original
+// array values and all of the additional arguments doubled.
+
+const doubleAndReturnArgs = (arr, ...args) => [
+    ...arr, ...args.map((v) => v * 2),
+];
+console.log(doubleAndReturnArgs([1,2,3],4,4));
+
+
+//Qs5. Write a function called mergeObjects that accepts 
+// two objects and returns a new object which contains all
+// the keys and values of the first object and second object.
+
+const mergeObjects = (obj1, obj2) => ({...obj1, ...obj2});
+console.log(mergeObjects ({a : 1, b: 2} ,{ c : 3 , d : 4}));
